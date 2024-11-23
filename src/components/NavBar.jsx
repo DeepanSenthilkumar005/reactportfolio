@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
-import brandName from '../assets/name.gif'
+import Resume from '../assets/Resume.pdf'; // Ensure the path is correct
 
 function NavBar() {
   const [showToggle, setShowToggle] = useState(false);
@@ -20,17 +20,17 @@ function NavBar() {
   }, []);
 
   const titles = {
-    name: ['home', 'about', 'skill', 'project', 'contact','hire me'],
-    link: ['h', 'a', 's', 'p', 'c','h']
+    name: ['home', 'about', 'skill', 'project', 'contact'],
+    link: ['#home', '#about', '#skill', '#project', '#contact'] // Use actual anchors or routes
   };
 
   return (
-    <div className="w-screen md:justify-between md:flex p-4">
+    <div className="w-screen sticky md:justify-between md:flex p-4">
       <div className="brand md:w-32 stm:flex stm:justify-between">
         <ul>
           <li className='md:hover:translate-x-3 duration-300 ease-in-out'>
-            <a href="#" className="brand-link  uppercase text-slate-100 text-cstext">
-              <p>Deepan S</p>   
+            <a href="#" className="brand-link uppercase text-slate-100 text-cstext">
+              <p>Deepan S</p>
               {/* <img className='w-40' src={brandName} alt="brand name gif" /> */}
             </a>
           </li>
@@ -49,6 +49,9 @@ function NavBar() {
             <a className="uppercase text-cstext hover:text-white" href={titles.link[index]}>{name}</a>
           </li>
         ))}
+        <li className="hover:scale-110 md:hover:translate-y-1 hover:font-medium duration-300">
+          <a className="uppercase text-cstext hover:text-white" download="Resume.pdf" href={Resume}>Hire me</a>
+        </li>
       </ul>
     </div>
   );
