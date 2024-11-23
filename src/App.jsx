@@ -1,10 +1,11 @@
-import React from 'react'
 import NavBar from './components/NavBar'
+import HomePage from './components/HomePage'
 
 function App() {
   return (
-    <div className='font-poppins'>
+    <div className='min-w-screen min-h-screen font-yellowtail bg-black'>
       <NavBar/>
+      <HomePage/>
     </div>
   )
 }
