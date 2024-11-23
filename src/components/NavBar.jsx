@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
-import Resume from '../assets/Resume.pdf'; // Ensure the path is correct
+import Resume from '../assets/Resume.pdf';
 
 function NavBar() {
   const [showToggle, setShowToggle] = useState(false);
