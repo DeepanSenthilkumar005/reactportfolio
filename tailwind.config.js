@@ -29,7 +29,7 @@ module.exports = {
                  'satisfy': ['Satisfy', 'cursive'],
                   'shadows-into-light': ['Shadows Into Light','cursive'],
                    'sacramento': ['Sacramento', 'cursive'],
-                    'yellowtail': ['Yellowtail', 'cursive'],
+                    'yellowtail': ['Yellowtail','Poppins','Inter', 'cursive'],
                      'tangerine': ['Tangerine', 'cursive'],
            },
     },
