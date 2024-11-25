@@ -13,6 +13,9 @@ function NavBar() {
 
   const handleResize = () => {
     if (showToggle && window.matchMedia("(max-width: 768px)").matches) {
+      setShowToggle(true);
+    }
+    else{
       setShowToggle(false);
     }
   };
@@ -26,7 +29,7 @@ function NavBar() {
   }, [showToggle]);
 
   return (
-    <div className="w-screen z-0 sticky md:justify-between md:flex p-4">
+    <div className="w-screen z-0 md:justify-between md:flex p-4">
       <div className="brand md:w-32 stm:flex stm:justify-between">
         <ul>
           <li className='md:hover:translate-x-3 duration-300 ease-in-out'>

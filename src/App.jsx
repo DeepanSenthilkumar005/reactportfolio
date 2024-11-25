@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div className='min-w-screen min-h-screen font-yellowtail bg-black'>
+    <div className='min-w-screen no-scrollbar min-h-screen font-yellowtail bg-black'>
       {loading ? <LoadingPage /> : (
         <>
           <NavBar />
