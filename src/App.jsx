@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
 import LoadingPage from './components/LoadingPage';
+import AboutPage from './components/AboutPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading delay (e.g., fetching data, preparing content)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the delay as needed
+    }, 2000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -21,6 +21,7 @@ function App() {
         <>
           <NavBar />
           <HomePage />
+          <AboutPage />
         </>
       )}
     </div>

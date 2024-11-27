@@ -5,7 +5,7 @@ import Resume from '../assets/Resume.pdf';
 function NavBar() {
   const titles = {
     name: ['home', 'about', 'skill', 'project', 'contact'],
-    link: ['#home', '#about', '#skill', '#project', '#contact'] // Use actual anchors or routes
+    link: ['#home', '#about', '#skill', '#project', '#contact']
   };
 
   const [showToggle, setShowToggle] = useState(false);
@@ -29,7 +29,7 @@ function NavBar() {
   }, [showToggle]);
 
   return (
-    <div className="w-screen z-0 md:justify-between md:flex p-4">
+    <div className="w-screen md:h-20 z-0 md:justify-between md:flex p-4">
       <div className="brand md:w-32 stm:flex stm:justify-between">
         <ul>
           <li className='md:hover:translate-x-3 duration-300 ease-in-out'>
@@ -53,7 +53,7 @@ function NavBar() {
           </li>
         ))}
         <li className="hover:scale-110 md:hover:translate-y-1 hover:font-medium duration-300">
-          <a className="uppercase text-cstext hover:text-white" download="Resume.pdf" href={Resume}>Hire me</a>
+          <a className="uppercase text-cstext hover:text-white" download="Deepan-Resume.pdf" href={Resume}>Resume</a>
         </li>
       </ul>
     </div>
