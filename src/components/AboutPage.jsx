@@ -1,9 +1,8 @@
+import React from 'react'
 
 function AboutPage() {
   return (
-    <section className="min-w-screen min-h-screen">
-
-    </section>
+    <div>AboutPage</div>
   )
 }
 

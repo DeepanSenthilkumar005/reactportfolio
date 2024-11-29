@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: { 
+        'cus-theme': '#ffffff',
+         customGray: '#f8f8f8',
+         customBlack: '#000000'
+        ,},
       screens: { 
         'xsm': { 'min': '0px' },
         'stm': { 'min': '10px', 'max': '768px' },
@@ -12,6 +17,8 @@ module.exports = {
       fontSize: { 
         'cstext': '23px',
       },
+
+      
 
       fontFamily: { 
         roboto: ['Roboto', 'sans-serif'],
