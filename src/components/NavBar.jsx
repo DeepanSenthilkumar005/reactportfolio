@@ -11,7 +11,7 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null); // Reference for the menu container
 
-  // Define the navigation items with icons and titles
+  // Define the navigation items with icons and titles to add more 
   const NavItem = [
     { title: "Home", icon: <HiOutlineHome /> },
     { title: "About", icon: <BsInfoSquare /> },
