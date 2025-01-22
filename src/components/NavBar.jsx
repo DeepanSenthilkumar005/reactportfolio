@@ -1,88 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react'; // Importing useState hook
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link as ScrollLink, Events, scrollSpy } from 'react-scroll';
-import Resume from '../assets/Resume.pdf';
+import { IoCloseOutline } from "react-icons/io5";
 
 function NavBar() {
-  const titles = {
-    name: ['home', 'about', 'skills', 'projects', 'contact'],
-    link: ['home', 'about', 'skills', 'projects', 'contact']
-  };
-
-  const [showToggle, setShowToggle] = useState(false);
-  const [focus, setFocus] = useState(titles.name[0]);
-
-  const handleResize = () => {
-    if (showToggle && window.matchMedia("(max-width: 768px)").matches) {
-      setShowToggle(true);
-    } else {
-      setShowToggle(false);
-    }
-  };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [showToggle]);
-
-  useEffect(() => {
-    Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
-    });
-
-    Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
-    });
-
-    scrollSpy.update();
-
-    return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
-    };
-  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const NavItem = ["Home", "About", "Qualification", "Project", "Contact"];
 
   return (
-    <div className="w-screen md:h-20 z-10 fixed top-0 md:justify-between md:flex p-4 bg-black">
-      <div className="brand md:w-32 stm:flex stm:justify-between">
-        <ul>
-          <li className='md:hover:translate-x-3 duration-300 ease-in-out'>
-            <a href="#" className="brand-link uppercase text-slate-100 text-cstext">
-              <p>Deepan S</p>
-            </a>
-          </li>
-        </ul>
+    <section className='NavBar sticky top-0 justify-between py-4 flex h-fit w-screen bg-black'>
+      <p className="Heading hover:scale-105 ps-4 transition-all duration-150 ease-in-out">
+        <a href="" className='text-customWhite md:text-xl'>Deepan S</a>
+      </p>
 
-        <div className="toggle-button stm:mt-1 stm:text-end md:hidden">
-          <button onClick={() => setShowToggle(!showToggle)}>
-            <RxHamburgerMenu className='text-slate-50' />
-          </button>
-        </div>
-      </div>
-
-      <ul className={`overflow-hidden transition-all duration-500 pe-2 ease-in-out ${showToggle ? 'stm:max-h-screen stm:gap-y-2 stm:opacity-100 stm:mt-5' : 'stm:max-h-0 stm:opacity-0'} stm:flex-col gap-5 text-slate-50 text-center mx-auto md:flex md:gap-9 md:justify-end md:w-full`}>
-        {titles.name.map((name, index) => (
-          <li className="hover:scale-110 md:hover:translate-y-1 hover:font-medium duration-300" key={index}>
-            <ScrollLink
-              className={`hover:cursor-pointer uppercase ${focus === name ? 'md:underline underline-offset-8' : ''} text-cstext hover:text-white`}
-              to={titles.link[index]}
-              spy={true}
-              smooth={true}
-              duration={500}
-              onSetActive={() => setFocus(name)}
-            >
-              {name}
-            </ScrollLink>
+      {/* Large Screen View */}
+      <ul className='flex gap-8 pe-4 stm:hidden'>
+        {NavItem.map((item) => (
+          <li key={item} className='text-customWhite hover:scale-105 transition-all duration-200 ease-in-out'>
+            <a href="#" className='cursor-pointer'>{item}</a>
           </li>
         ))}
-        <li className="hover:scale-110 md:hover:translate-y-1 hover:font-medium duration-300">
-          <a className="uppercase text-cstext hover:text-white" download="Deepan-Resume.pdf" href={Resume}>Resume</a>
-        </li>
       </ul>
-    </div>
+
+      {/* Mobile Screen View */}
+      <div className="md:hidden overflow-x-hidden pe-4" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {isMenuOpen ? (
+          <IoCloseOutline className="text-white text-2xl" />
+        ) : (
+          <RxHamburgerMenu className="text-white text-2xl" />
+        )}
+      </div>
+
+      {isMenuOpen && (
+        <ul className='right-0 top-14 h-screen md:hidden absolute w-3/5 flex-row bg-white p-0'>
+          {NavItem.map((item) => (
+            <li key={item} className='text-customBlack py-4 ps-4'>
+              <a href="#" className=''>{item}</a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   );
 }
 

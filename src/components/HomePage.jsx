@@ -1,22 +1,32 @@
 import { useState } from 'react';
-import im from '../assets/name.gif';
+import ProfilePhoto from "../assets/person.avif"
 
 
 function HomePage() {
   return (
-    <section className="grid md:grid-cols-2 sm:grid-cols-1 p-5 gap-3 min-w-screen min-h-screen">
-        <div className="left md:col-span-1 font-tangerine stm:text-[2rem] md:text-[2.5rem] text-center align-middle text-slate-50 stm:order-2">
-            <b className="">Frontend Developer</b>
-            <p className="heading stm:text-[1.5rem]">
-                Hi There <br />
-                "I’m Deepan. Welcome to my creative corner! As a passionate designer, I transform ideas into beautiful, functional creations—be it user interactive webpages. Explore my portfolio below!"
+      <section className='HomePage p-4 h-screen w-screen'>
+        <div className="grid stm:grid-cols-1 md:grid-cols-2">
+          {/* Left Content */}
+          <div className="LeftContent">
+            <img src={ProfilePhoto} alt="" />
+          </div>
+          {/* Right Content */}
+          <div className="RightContent text-white rounded-lg shadow-lg max-w-4xl mx-auto">
+            <div className="Content bg-gray-800 p-8">
+              <b className="text-2xl font-bold">Hi there!</b>
+              <p className="mt-4 text-lg">
+                I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
+                Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
+                <span className="block mt-2">Explore my portfolio below!</span>
+              </p>
+            </div>
 
-            </p>
+          </div>
+
         </div>
-        <div className="right h-full content-center md:col-span-1 stm:order-1">
-            <img src={im} className='' alt="" />
-        </div>
-    </section>
+
+
+      </section>
   )
 }
 

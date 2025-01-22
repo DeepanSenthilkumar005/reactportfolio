@@ -1,0 +1,32 @@
+<!-- <div className="toggle-button">
+<button onClick={() => setShowToggle(!showToggle)}>
+  <RxHamburgerMenu className='text-slate-50' />
+</button>
+</div>
+<ul className=''>
+        {titles.name.map((name, index) => (
+          <li className="" key={index}>
+            <ScrollLink
+              className={``}
+              to={titles.link[index]}
+              spy={true}
+              smooth={true}
+              duration={500}
+              onSetActive={() => setFocus(name)}
+            >
+              {name}
+            </ScrollLink>
+          </li>
+        ))}
+        <li className="">
+          <a className="" download="Deepan-Resume.pdf" href={Resume}>Resume</a>
+        </li>
+      </ul>
+
+
+    %   home page content
+    <p className="heading stm:text-[1.5rem]">
+                Hi There <br />
+                "I’m Deepan. Welcome to my creative corner! As a passionate designer, I transform ideas into beautiful, functional creations—be it user interactive webpages. Explore my portfolio below!"
+
+            </p> -->
