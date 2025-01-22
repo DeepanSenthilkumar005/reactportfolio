@@ -39,10 +39,10 @@ function HomePage() {
 
               </ul>
             </div>
-            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2' />
+            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4' />
           </div>
           {/* Right Content */}
-          <div className="RightContent my-auto text-white max-w-4xl mx-auto">
+          <div className="RightContent stm:mx-auto my-auto text-white max-w-4xl mx-auto">
             <div className="Content bg-gray-800 p-8 rounded-lg shadow-lg ">
               <b className="text-2xl font-bold">Hi there!</b>
               <p className="mt-4 text-lg">
