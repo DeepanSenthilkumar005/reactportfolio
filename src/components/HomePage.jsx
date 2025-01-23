@@ -3,6 +3,7 @@ import ProfilePhoto from "../assets/person.avif"
 import { SlSocialLinkedin } from "react-icons/sl";
 import { SlSocialGithub } from "react-icons/sl";
 import { TbWorld } from "react-icons/tb";
+import Typewriter from './Typewriter ';
 
 function HomePage() {
   const Links=[
@@ -44,7 +45,9 @@ function HomePage() {
           {/* Right Content */}
           <div className="RightContent stm:mx-auto my-auto text-white max-w-4xl mx-auto">
             <div className="Content bg-gray-800 p-8 rounded-lg shadow-lg ">
-              <b className="text-2xl font-bold">Hi there!</b>
+              <b className="text-2xl stm:text-xl font-bold block">Hi there! </b>
+              {/* <b className="text-2xl font-bold">I am a</b> */}
+              <b className="text-2xl stm:text-xl font-bold flex">I am a&nbsp;<Typewriter /></b>
               <p className="mt-4 text-lg">
                 I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
                 Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
