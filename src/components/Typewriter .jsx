@@ -50,7 +50,7 @@ const Typewriter = () => {
     return (
         <div className="typewriter text-orange-500">
             <span>{text}</span>
-            <span className={`border-l-2 ${borderLine ? 'border-black' : 'border-transparent'}`}></span>
+            <span className={`border-l-2 ${borderLine ? 'border-white' : 'border-transparent'}`}></span>
         </div>
     );
 };
