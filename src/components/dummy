@@ -30,3 +30,15 @@
                 "I’m Deepan. Welcome to my creative corner! As a passionate designer, I transform ideas into beautiful, functional creations—be it user interactive webpages. Explore my portfolio below!"
 
             </p> -->
+
+
+
+
+
+            % Content from the Home page
+
+            <p className="mt-4 text-lg text-justify">
+            I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
+            Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
+            <span className="block mt-2">Explore my portfolio below!</span>
+          </p>

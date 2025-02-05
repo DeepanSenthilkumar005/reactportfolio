@@ -24,7 +24,7 @@ function HomePage() {
     }
   ]
   return (
-      <section className='HomePage p-4 h-screen w-screen'>
+      <section className='HomePage p-4 min:h-full w-full'>
         <div className="grid stm:grid-cols-1 md:grid-cols-2">
           {/* Left Content */}
           <div className="LeftContent my-auto flex justify-between">
@@ -44,11 +44,11 @@ function HomePage() {
           </div>
           {/* Right Content */}
           <div className="RightContent stm:mx-auto my-auto text-white max-w-4xl mx-auto">
-            <div className="Content bg-gray-800 p-8 rounded-lg shadow-lg ">
+            <div className="Content bg-gray-600 p-8 rounded-lg shadow-lg ">
               <b className="text-2xl stm:text-xl font-bold block">Hi there! </b>
               {/* <b className="text-2xl font-bold">I am a</b> */}
               <b className="text-2xl stm:text-xl font-bold flex">I am a&nbsp;<Typewriter /></b>
-              <p className="mt-4 text-lg">
+              <p className="mt-4 text-lg text-justify">
                 I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
                 Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
                 <span className="block mt-2">Explore my portfolio below!</span>

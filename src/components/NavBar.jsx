@@ -35,7 +35,7 @@ function NavBar() {
   }, []);
 
   return (
-    <section className="NavBar sticky top-0 justify-between py-4 flex h-fit w-screen bg-black">
+    <section className="NavBar sticky top-0 justify-between py-4 flex h-fit w-full bg-black">
       {/* Header */}
       <p className="Heading hover:scale-105 ps-4 transition-all duration-150 ease-in-out">
         <a href="#" className="text-customWhite md:text-xl">Deepan S</a>
@@ -64,7 +64,7 @@ function NavBar() {
       {isMenuOpen && (
         <ul
           ref={menuRef}
-          className="right-0 top-14 h-screen md:hidden absolute w-3/5 flex-row bg-white p-0"
+          className="right-0 top-14 h-screen md:hidden absolute w-3/5 flex-row shadow-lg shadow-gray-600 bg-white p-0"
         >
           {NavItem.map((item) => (
             <li key={item.title} className="text-customBlack flex py-4 ps-4">
