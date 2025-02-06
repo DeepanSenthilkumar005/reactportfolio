@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './components/HomePage'
 import NavBar from './components/NavBar'
 import AboutPage from './components/AboutPage'
+import QualificationPage from './components/QualificationPage'
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
         <NavBar />
         <HomePage />
         <AboutPage />
+        <QualificationPage />
 
     </div>
   )
 }
 
-export default App
+export default App;

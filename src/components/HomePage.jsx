@@ -4,6 +4,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { SlSocialGithub } from "react-icons/sl";
 import { TbWorld } from "react-icons/tb";
 import Typewriter from './Typewriter ';
+import { TfiHandPointDown } from "react-icons/tfi";
 
 function HomePage() {
   const Links=[
@@ -51,7 +52,10 @@ function HomePage() {
               <p className="mt-4 text-lg text-justify">
                 I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
                 Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
-                <span className="block mt-2">Explore my portfolio below!</span>
+                <span className=" mt-2 flex">
+                  Explore my portfolio below!
+                  <TfiHandPointDown className='mt-1 ms-2 text-xl' />
+                </span>
               </p>
             </div>
 

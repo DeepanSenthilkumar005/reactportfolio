@@ -6,6 +6,7 @@ import { BsInfoSquare } from "react-icons/bs";
 import { LiaGraduationCapSolid } from "react-icons/lia";
 import { VscGithubProject } from "react-icons/vsc";
 import { RxPerson } from "react-icons/rx";
+import { HiOutlineLightBulb } from "react-icons/hi";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function NavBar() {
     { title: "Home", icon: <HiOutlineHome /> },
     { title: "About", icon: <BsInfoSquare /> },
     { title: "Qualification", icon: <LiaGraduationCapSolid /> },
+    { title: "Skills", icon: <HiOutlineLightBulb /> },
     { title: "Project", icon: <VscGithubProject /> },
     { title: "Contact", icon: <RxPerson /> },
   ];
