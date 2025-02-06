@@ -5,7 +5,7 @@ import { BsFillCaretLeftFill } from "react-icons/bs";
 
 function QualificationPAge() {
   return (
-    <section className="QualificationPage w-full p-4">
+    <section className="QualificationPage my-6 w-full p-4">
         <div className="Heading text-2xl stm:text-xxl font-semibold text-center m-2">
             Qualification
         </div>

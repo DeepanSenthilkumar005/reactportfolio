@@ -4,6 +4,8 @@ import HomePage from './components/HomePage'
 import NavBar from './components/NavBar'
 import AboutPage from './components/AboutPage'
 import QualificationPage from './components/QualificationPage'
+import SkillsPage from './components/SkillsPage'
+import ProjectsPage from './components/ProjectsPage'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <HomePage />
         <AboutPage />
         <QualificationPage />
+        <SkillsPage />
+        <ProjectsPage />
 
     </div>
   )

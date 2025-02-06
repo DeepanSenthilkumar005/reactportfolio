@@ -5,6 +5,7 @@ import { SlSocialGithub } from "react-icons/sl";
 import { TbWorld } from "react-icons/tb";
 import Typewriter from './Typewriter ';
 import { TfiHandPointDown } from "react-icons/tfi";
+import ScrollGif from '../assets/scroll.gif'
 
 function HomePage() {
   const Links=[
@@ -41,7 +42,7 @@ function HomePage() {
 
               </ul>
             </div>
-            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4' />
+            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4 md:grayscale md:hover:grayscale-0  transition-all duration-300 ' />
           </div>
           {/* Right Content */}
           <div className="RightContent stm:mx-auto my-auto text-white max-w-4xl mx-auto">
@@ -54,7 +55,8 @@ function HomePage() {
                 Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
                 <span className=" mt-2 flex">
                   Explore my portfolio below!
-                  <TfiHandPointDown className='mt-1 ms-2 text-xl' />
+                  <TfiHandPointDown className='mt-1 ms-2 text-xl scroll-img'  />
+                  {/* <img src={ScrollGif} alt=""  className="h-4" srcset="" /> */}
                 </span>
               </p>
             </div>
