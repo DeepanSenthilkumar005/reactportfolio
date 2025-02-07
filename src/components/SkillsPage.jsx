@@ -34,7 +34,7 @@ function SkillsPage() {
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded-lg transition-all font-medium text-white 
-              ${selectedCategory === category ? "bg-blue-600 dark:bg-customGreen" : "bg-gray-500 hover:bg-blue-500"}`}
+              ${selectedCategory === category ? "bg-blue-600 dark:bg-customGreen" : "bg-gray-500 dark:hover:bg-customGreen hover:bg-blue-500"}`}
           >
             {category}
           </button>
