@@ -37,7 +37,7 @@ function NavBar() {
   }, []);
 
   return (
-    <section className="NavBar sticky top-0 justify-between py-4 flex h-fit w-full bg-black">
+    <section className="NavBar z-50 sticky top-0 justify-between py-4 flex h-fit w-full bg-black">
       {/* Header */}
       <p className="Heading hover:scale-105 ps-4 transition-all duration-150 ease-in-out">
         <a href="#" className="text-customWhite md:text-xl">Deepan S</a>

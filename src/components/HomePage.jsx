@@ -6,6 +6,7 @@ import { TbWorld } from "react-icons/tb";
 import Typewriter from './Typewriter ';
 import { TfiHandPointDown } from "react-icons/tfi";
 import ScrollGif from '../assets/scroll.gif'
+import WelcomePage from './WelcomePage';
 
 function HomePage() {
   const Links=[
@@ -27,6 +28,7 @@ function HomePage() {
   ]
   return (
       <section className='HomePage p-4 min:h-full w-full'>
+        {/* <WelcomePage /> */}
         <div className="grid stm:grid-cols-1 md:grid-cols-2">
           {/* Left Content */}
           <div className="LeftContent my-auto flex justify-between">
