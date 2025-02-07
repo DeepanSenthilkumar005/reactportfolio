@@ -34,7 +34,7 @@ function SkillsPage() {
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded-lg transition-all font-medium text-white 
-              ${selectedCategory === category ? "bg-blue-600 dark:bg-[#00bf63]" : "bg-gray-500 hover:bg-blue-500"}`}
+              ${selectedCategory === category ? "bg-blue-600 dark:bg-customGreen" : "bg-gray-500 hover:bg-blue-500"}`}
           >
             {category}
           </button>
@@ -52,7 +52,7 @@ function SkillsPage() {
             {/* Progress Bar (Fixed) */}
             <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
               <div
-                className="bg-blue-600 dark:bg-[#00bf63] h-2.5 rounded-full"
+                className="bg-blue-600 dark:bg-customGreen h-2.5 rounded-full"
                 style={{ width: `${level}%` }} // ✅ Fixed inline style
               ></div>
             </div>

@@ -8,6 +8,7 @@ import SkillsPage from "./components/SkillsPage";
 import ProjectsPage from "./components/ProjectsPage";
 import WelcomePage from "./components/WelcomePage";
 import Timeline from "./components/TimeLine";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
@@ -27,6 +28,7 @@ function App() {
           <SkillsPage />
           <ProjectsPage />
           {/* <Timeline /> */}
+          <ContactPage />
         </>
       )}
     </div>

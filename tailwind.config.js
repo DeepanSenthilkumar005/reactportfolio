@@ -9,6 +9,7 @@ module.exports = {
          customGray: '#f8f8f8',
          customBlack: '#000000',
          customWhite: '#FFFFFF',
+         customGreen : '#00bf63',
         },
       screens: { 
         'xsm': { 'min': '0px' },

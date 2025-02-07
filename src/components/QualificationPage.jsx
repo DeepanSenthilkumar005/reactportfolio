@@ -33,7 +33,7 @@ function QualificationPAge() {
             </div>
 
             {/* Middle Line */}
-            <div className="Middleline border border-gray-600"></div>
+            <div className="Middleline border dark:border-white border-black"></div>
 
             {/* Right Content BE and SSLC Comes Below*/}
             <div className="rightcontent w-full ">
