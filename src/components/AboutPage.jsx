@@ -16,7 +16,7 @@ With expertise in multiple programming languages, I am cooperative and passionat
 
       <div className="Resume w-full mt-4 justify-items-center">
         <div className="border dark:border-customGreen dark:hover:bg-customGreen border-blue-400 p-3 rounded-l-xl rounded-r-xl hover:bg-blue-400 cursor-pointer hover:text-white">
-          <a href={Resume} className='flex' download="Deepan-Resume">Download CV <i className='ms-2 mt-1'><FaCloudDownloadAlt /></i></a>
+          <a href={Resume} className='flex' download="Deepan-CV.pdf">Download CV <i className='ms-2 mt-1'><FaCloudDownloadAlt /></i></a>
         </div>
         
       </div>
