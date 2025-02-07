@@ -29,7 +29,7 @@ function HomePage() {
   return (
       <section className='HomePage p-4 min:h-full w-full'>
         {/* <WelcomePage /> */}
-        <div className="grid stm:grid-cols-1 md:grid-cols-2">
+        <div className="grid stm:grid-cols-1 md:gap-2 md:grid-cols-2">
           {/* Left Content */}
           <div className="LeftContent my-auto flex justify-between">
             <div className="links my-auto ms-12 items-center">
@@ -37,7 +37,7 @@ function HomePage() {
                 {
                   Links.map((link)=>(
                    <li key={link}>
-                    <a href={link.link} target="_blank" rel="noopener noreferrer"><abbr title={link.name}>{link.icon}</abbr></a>
+                    <a href={link.link} className='dark:text-white' target="_blank" rel="noopener noreferrer"><abbr title={link.name}>{link.icon}</abbr></a>
                   </li>
                   ))
                 }
@@ -47,8 +47,8 @@ function HomePage() {
             <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4 md:grayscale md:hover:grayscale-0  transition-all duration-300 ' />
           </div>
           {/* Right Content */}
-          <div className="RightContent stm:mx-auto my-auto text-white max-w-4xl mx-auto">
-            <div className="Content bg-gray-600 p-8 rounded-lg shadow-lg ">
+          <div className="RightContent stm:mt-5 stm:mx-auto my-auto text-white max-w-4xl mx-auto">
+            <div className="Content bg-gray-800 dark:bg-gray-800 p-8 rounded-lg shadow-lg ">
               <b className="text-2xl stm:text-xl font-bold block">Hi there! </b>
               {/* <b className="text-2xl font-bold">I am a</b> */}
               <b className="text-2xl stm:text-xl font-bold flex">I am a&nbsp;<Typewriter /></b>

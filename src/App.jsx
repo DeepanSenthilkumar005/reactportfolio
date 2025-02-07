@@ -7,12 +7,13 @@ import QualificationPage from "./components/QualificationPage";
 import SkillsPage from "./components/SkillsPage";
 import ProjectsPage from "./components/ProjectsPage";
 import WelcomePage from "./components/WelcomePage";
+import Timeline from "./components/TimeLine";
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <div className="font-poppins">
+    <div className="font-poppins dark:bg-black">
       {/* Show WelcomePage only if isVisible is true */}
       <WelcomePage isVisible={isVisible} setIsVisible={setIsVisible} />
 
@@ -25,6 +26,7 @@ function App() {
           <QualificationPage />
           <SkillsPage />
           <ProjectsPage />
+          {/* <Timeline /> */}
         </>
       )}
     </div>

@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function AboutPage() {
   return (
-    <section className='AboutPage justify-items-center w-full md:min:h-full p-4'>
+    <section className='AboutPage dark:text-white justify-items-center w-full md:min:h-full p-4'>
       <div className="Heading text-2xl stm:text-xxl font-semibold text-center m-2">
         My Introduction
       </div>
@@ -15,7 +15,7 @@ With expertise in multiple programming languages, I am cooperative and passionat
       </div>
 
       <div className="Resume w-full mt-4 justify-items-center">
-        <div className="border border-blue-400 p-3 rounded-l-xl rounded-r-xl hover:bg-blue-400 cursor-pointer hover:text-white">
+        <div className="border dark:border-[#00bf63] dark:hover:bg-[#00bf63] border-blue-400 p-3 rounded-l-xl rounded-r-xl hover:bg-blue-400 cursor-pointer hover:text-white">
           <a href={Resume} className='flex' download="Deepan-Resume">Download CV <i className='ms-2 mt-1'><FaCloudDownloadAlt /></i></a>
         </div>
         

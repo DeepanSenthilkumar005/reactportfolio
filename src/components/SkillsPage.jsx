@@ -24,8 +24,8 @@ function SkillsPage() {
   const categories = [...new Set(Skills.map(([category]) => category))];
 
   return (
-    <section className="SkillPage w-full my-6 px-4">
-      <h1 className="text-2xl font-semibold text-center m-2">Skills</h1>
+    <section className="SkillPage w-full my-6 px-4 dark:text-white">
+      <h1 className="text-2xl font-semibold text-center m-2 mb-5">Skills</h1>
 
       {/* Category Buttons */}
       <div className="flex flex-wrap justify-center gap-3 mb-4">
@@ -34,7 +34,7 @@ function SkillsPage() {
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded-lg transition-all font-medium text-white 
-              ${selectedCategory === category ? "bg-blue-600" : "bg-gray-500 hover:bg-blue-500"}`}
+              ${selectedCategory === category ? "bg-blue-600 dark:bg-[#00bf63]" : "bg-gray-500 hover:bg-blue-500"}`}
           >
             {category}
           </button>
@@ -45,19 +45,19 @@ function SkillsPage() {
       {selectedCategory &&
         Skills.filter(([category]) => category === selectedCategory).map(([_, skill, level]) => (
           <div key={skill} className="my-2 md:mx-auto md:w-1/2">
-            <label htmlFor={skill} className="block text-gray-600 font-medium">
+            <label htmlFor={skill} className="block dark:text-gray-300 text-gray-600 font-medium">
               {skill}
             </label>
 
             {/* Progress Bar (Fixed) */}
             <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
               <div
-                className="bg-blue-600 h-2.5 rounded-full"
+                className="bg-blue-600 dark:bg-[#00bf63] h-2.5 rounded-full"
                 style={{ width: `${level}%` }} // ✅ Fixed inline style
               ></div>
             </div>
 
-            <span className="block text-right text-sm font-semibold text-gray-500">
+            <span className="block text-right text-sm font-semibold dark:text-gray-300 text-gray-500">
               {level}%
             </span>
           </div>

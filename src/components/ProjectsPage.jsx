@@ -7,7 +7,7 @@ function ProjectsPage() {
       "id": 1,
       "image": "https://d33wubrfki0l68.cloudfront.net/67a456603f6f090008648d71/screenshot_2025-02-06-06-28-24-0000.webp",
       "title": "Personal Portfolio",
-      "description": "A well-structured personal portfolio showcasing skills, projects, and experience using HTML, CSS, and JavaScript. Designed for an engaging user experience with a clean UI and responsive layout."
+      "description": "A well-structured personal portfolio showcasing skills, projects, and experience using React Js and Tailwind CSS. Designed for an engaging user experience with a clean UI and responsive layout."
     },
     {
       "id": 2,
@@ -49,13 +49,13 @@ function ProjectsPage() {
   };
 
   return (
-    <section className="w-full my-6 px-4">
-      <h1 className="text-2xl font-semibold text-center m-2 md:mb-16">Projects</h1>
+    <section className="w-full dark:text-white my-6 px-4">
+      <h1 className="text-2xl font-semibold text-center m-2 mb-8 md:mb-16">Projects</h1>
 
       {/* Carousel */}
       <div className="relative w-full max-w-3xl mx-auto">
         {/* Wrapper for Images */}
-        <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
+        <div className="relative h-56 md:h-96 shadow-sm shadow-black overflow-hidden rounded-lg">
           {projectsData.map((project, index) => (
             <div
               key={project.id}
@@ -72,10 +72,10 @@ function ProjectsPage() {
                 />
 
                 {/* Caption (visible on hover) */}
-                <figcaption className="absolute inset-0 text-justify bg-black bg-opacity-25 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <p className="text-lg text-center">{project.title}</p>
+                <figcaption className="absolute stm:px-9 stm:text-sm inset-0 text-justify bg-black bg-opacity-25 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <p className="text-lg font-semibold text-center">{project.title}</p>
                   <p className="justify-center">{project.description}</p>
-                </figcaption>
+                </figcaption> 
               </div>
             </div>
           ))}
@@ -84,13 +84,13 @@ function ProjectsPage() {
         {/* Slider controls */}
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 transition"
+          className="absolute top-1/2 left-2 transform -translate-y-1/2 dark:bg-[#d3e5e9] dark:text-[#828a95] bg-gray-700 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 transition"
         >
           ❮
         </button>
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 transition"
+          className="absolute top-1/2 right-2 transform -translate-y-1/2 dark:bg-[#d3e5e9] dark:text-[#828a95] bg-gray-700 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 transition"
         >
           ❯
         </button>
@@ -101,7 +101,7 @@ function ProjectsPage() {
             <button
               key={index}
               className={`w-3 h-3 rounded-full transition ${
-                index === currentIndex ? "bg-blue-500" : "bg-gray-400"
+                index === currentIndex ? "bg-blue-500 dark:bg-[#00bf63]" : "bg-gray-400 dark:bg-[#d3e5e9]"
               }`}
               onClick={() => setCurrentIndex(index)}
             ></button>
