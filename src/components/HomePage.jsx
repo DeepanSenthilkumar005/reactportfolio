@@ -47,23 +47,27 @@ function HomePage() {
             <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4 md:grayscale md:hover:grayscale-0  transition-all duration-300 ' />
           </div>
           {/* Right Content */}
-          <div className="RightContent stm:mt-5 stm:mx-auto my-auto text-white max-w-4xl mx-auto">
-            <div className="Content bg-gray-800 dark:bg-gray-800 p-8 rounded-lg shadow-lg ">
-              <b className="text-2xl stm:text-xl font-bold block">Hi there! </b>
-              {/* <b className="text-2xl font-bold">I am a</b> */}
-              <b className="text-2xl stm:text-xl font-bold flex">I am a&nbsp;<Typewriter /></b>
-              <p className="mt-4 text-lg text-justify">
-                I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
-                Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
-                <span className=" mt-2 flex">
-                  Explore my portfolio below!
-                  <TfiHandPointDown className='mt-1 ms-2 text-xl scroll-img'  />
-                  {/* <img src={ScrollGif} alt=""  className="h-4" srcset="" /> */}
-                </span>
-              </p>
-            </div>
+          <div className="RightContent stm:mt-5 stm:mx-auto my-auto text-gray-900 dark:text-white max-w-4xl mx-auto">
+  <div className="Content bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700">
+    <b className="text-3xl stm:text-2xl font-bold block text-gray-900 dark:text-white">
+      Hi there!
+    </b>
+    <b className="text-2xl stm:text-xl font-bold flex text-gray-800 dark:text-gray-300">
+      I am a&nbsp;<Typewriter />
+    </b>
+    <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 text-justify">
+      I am <span className="font-semibold text-orange-500">Deepan</span>, Welcome to my creative corner! 
+      I’m a passionate designer who thrives on transforming ideas into beautiful, functional creations.
+      Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, 
+      I’m here to bring your vision to life.
+    </p>
+    <div className="mt-4 flex items-center">
+      <span className="text-lg font-medium text-gray-800 dark:text-gray-300">Explore my portfolio below!</span>
+      <TfiHandPointDown className="ml-2 text-2xl text-blue-600 dark:text-blue-400 animate-bounce" />
+    </div>
+  </div>
+</div>
 
-          </div>
 
         </div>
 
