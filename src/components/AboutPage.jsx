@@ -8,7 +8,7 @@ function AboutPage() {
       <div className="Heading text-2xl stm:text-xxl font-semibold text-center m-2">
         My Introduction
       </div>
-      <div className="Content shadow-sm cursor-pointer md:shadow-md text-justify stm:text-center text-xl h-fit md:w-2/3  rounded-lg font-medium border shadow-gray-500  p-4">
+      <div className="Content shadow-lg cursor-pointer text-justify stm:text-center text-xl h-fit md:w-2/3  rounded-lg font-medium border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-lg  p-4">
       I’m Deepan, a dynamic and business-minded designer and developer from Tiruchengode. I thrive on transforming ideas into beautiful, functional creations, whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative solutions.
 
 With expertise in multiple programming languages, I am cooperative and passionate about delivering high-quality software products. My goal is to bring visions to life through creativity, technology, and precision.
