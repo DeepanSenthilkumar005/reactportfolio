@@ -42,3 +42,66 @@
             Whether it’s crafting elegant user interfaces, designing captivating logos, or envisioning innovative spaces, I’m here to bring your vision to life.
             <span className="block mt-2">Explore my portfolio below!</span>
           </p>
+
+
+
+          {/* Right Content (Contact Info & Social Links) */}
+          <div className="RightContent md:order-1 border border-gray-500 rounded-md p-6 shadow-md">
+            <div className="topContent space-y-4">
+              <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <BsTelephone className="mr-3 text-blue-600 dark:text-blue-400" />
+                <a href="tel:+919442479225" className="hover:underline text-lg font-medium">
+                  +91-9442479225
+                </a>
+              </div>
+              <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <GrMailOption className="mr-3 text-red-600 dark:text-red-400" />
+                <a href="mailto:deepancse45@gmail.com" className="hover:underline text-lg font-medium">
+                  deepancse45@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <SlLocationPin className="mr-3 text-green-600 dark:text-green-400" />
+                <span className="text-lg font-medium">
+                  Namakkal, Tamil Nadu, India
+                </span>
+              </div>
+            </div>
+  
+            {/* Social Links */}
+            <div className="socialLinks mt-6 space-y-4">
+              <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <BsGithub className="mr-3 text-black dark:text-white" />
+                <a 
+                  href="https://github.com/DeepanSenthilkumar005" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline text-lg font-medium"
+                >
+                  GitHub
+                </a>
+              </div>
+              <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <BsWhatsapp className="mr-3 text-green-600 dark:text-green-400" />
+                <a 
+                  href="https://wa.me/919442479225" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline text-lg font-medium"
+                >
+                  WhatsApp
+                </a>
+              </div>
+              <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <BsLinkedin className="mr-3 text-blue-600 dark:text-blue-400" />
+                <a 
+                  href="https://www.linkedin.com/in/deepan-senthilkumar" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline text-lg font-medium"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
