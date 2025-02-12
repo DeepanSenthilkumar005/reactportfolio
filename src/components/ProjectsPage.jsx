@@ -9,7 +9,7 @@ function ProjectsPage() {
       "image": "https://d33wubrfki0l68.cloudfront.net/67a456603f6f090008648d71/screenshot_2025-02-06-06-28-24-0000.webp",
       "title": "Personal Portfolio",
       "description": "A well-structured personal portfolio showcasing skills, projects, and experience using React Js and Tailwind CSS. Designed for an engaging user experience with a clean UI and responsive layout.",
-      "Link":""
+      "Link":"#"
     },
     {
       "id": 2,
