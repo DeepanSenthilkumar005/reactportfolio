@@ -16,7 +16,7 @@ function App() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    AOS.init({ duration: 1500, once: false }); // ✅ AOS initialization
+    AOS.init({ duration: 1500, once: true }); // ✅ AOS initialization
   }, []);
 
   return (
