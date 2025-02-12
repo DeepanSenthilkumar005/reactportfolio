@@ -54,7 +54,7 @@ function ContactPage() {
   };
 
   return (
-    <section className="text-black dark:text-white justify-items-center w-full md:min:h-full p-4">
+    <section id="Contact" className="text-black dark:text-white justify-items-center w-full md:min:h-full p-4">
       <div className="Heading text-2xl sm:text-xxl font-semibold text-center m-2">
         Contact Us
       </div>

@@ -27,7 +27,7 @@ function HomePage() {
     }
   ]
   return (
-      <section className='HomePage p-4 min:h-full w-full'>
+      <section id='Home' className='HomePage p-4 min:h-full w-full'>
         {/* <WelcomePage /> */}
         <div className="grid stm:grid-cols-1 md:gap-2 md:grid-cols-2">
           {/* Left Content */}

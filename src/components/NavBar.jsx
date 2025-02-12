@@ -7,6 +7,7 @@ import { LiaGraduationCapSolid } from "react-icons/lia";
 import { VscGithubProject } from "react-icons/vsc";
 import { RxPerson } from "react-icons/rx";
 import { HiOutlineLightBulb } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +49,8 @@ function NavBar() {
         {NavItem.map((item, index) => (
           <li key={index} className="text-customWhite flex hover:scale-105 transition-all duration-200 ease-in-out">
             <span className="mr-2 mt-1">{item.icon}</span>
-            <a href="#" className="cursor-pointer">{item.title}</a>
+            {/* <a href="#" className="cursor-pointer">{item.title}</a> */}
+            <Link to={item.title} smooth={true} offset={-70} duration={500} className='cursor-pointer'>{item.title}</Link>
           </li>
         ))}
       </ul>
@@ -69,9 +71,11 @@ function NavBar() {
           className="right-0 top-14 h-screen md:hidden absolute w-3/5 flex-row shadow-lg shadow-gray-600 bg-white p-0"
         >
           {NavItem.map((item) => (
-            <li key={item.title} className="text-customBlack flex py-4 ps-4">
+            <li key={item.title} className="text-customBlack cursor-pointer flex py-4 ps-4">
               <span className="mr-2 mt-1">{item.icon}</span>
-              <a href="#" className="">{item.title}</a>
+              {/* <a href="#" className="">{item.title}</a> */}
+            <Link to={item.title} offset={-50} smooth={true} duration={500}>{item.title}</Link>
+
             </li>
           ))}
         </ul>

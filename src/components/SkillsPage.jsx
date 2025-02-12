@@ -24,7 +24,7 @@ function SkillsPage() {
   const categories = [...new Set(Skills.map(([category]) => category))];
 
   return (
-    <section className="SkillPage w-full my-6 px-4 dark:text-white">
+    <section id='Skills' className="SkillPage w-full my-6 px-4 dark:text-white">
       <h1 className="text-2xl font-semibold text-center m-2 mb-5">Skills</h1>
 
       {/* Category Buttons */}
