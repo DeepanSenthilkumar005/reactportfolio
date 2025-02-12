@@ -16,28 +16,28 @@ function ProjectsPage() {
       "image": "https://d33wubrfki0l68.cloudfront.net/6717b525d63291000812b32d/screenshot_2024-10-22-14-23-02-0000.webp",
       "title": "E-Commerce Website",
       "description": "A dynamic online shopping platform featuring product listings, a shopping cart, and a checkout system. Built with React and Tailwind CSS, offering a seamless user experience with modern UI/UX principles.",
-      "Link":""
+      "Link":"https://github.com/DeepanSenthilkumar005/QtechBlogCard"
     },
     {
       "id": 3,
       "image": "https://d33wubrfki0l68.cloudfront.net/678a92d1b273190008962105/screenshot_2025-01-17-17-27-19-0000.webp",
       "title": "Commercial Website",
       "description": "A business-oriented website designed for professional use, providing company details, services, and contact information. Developed with responsive design principles to ensure accessibility across devices.",
-      "Link":""
+      "Link":"https://github.com/DeepanSenthilkumar005/Hertzwork-Home"
     },
     {
       "id": 4,
       "image": "https://d33wubrfki0l68.cloudfront.net/671fabef4756715ecc543a1c/screenshot_2024-10-28-15-21-58-0000.webp",
       "title": "Calculator",
       "description": "A simple yet functional calculator built using React, allowing users to perform basic arithmetic operations. Designed with a user-friendly interface and interactive elements.",
-      "Link":""
+      "Link":"https://github.com/DeepanSenthilkumar005/demo"
     },
     {
       "id": 5,
       "image": "https://d33wubrfki0l68.cloudfront.net/6741e6e05dc33d00088aeaf4/screenshot_2024-11-23-14-30-27-0000.webp",
       "title": "Chat App",
       "description": "A real-time chat application enabling users to communicate seamlessly. Features include instant messaging, user authentication, and a responsive UI for a smooth chatting experience.",
-      "Link":""
+      "Link":"https://github.com/DeepanSenthilkumar005/chatapp"
     }
   ];
   
