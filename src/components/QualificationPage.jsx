@@ -6,17 +6,20 @@ import { BsFillCaretLeftFill } from "react-icons/bs";
 function QualificationPAge() {
   return (
     <section id='Qualification' className="QualificationPage dark:text-white my-6 w-full p-4">
-        <div className="Heading text-2xl stm:text-xxl font-semibold text-center m-2">
-            Qualification
+        <div data-aos='fade-up' className="head">
+            <div data-aos='fade-up' className="Heading text-2xl stm:text-xxl font-semibold text-center m-2">
+                Qualification
+            </div>
+            <div className="Education flex justify-center mb-4">
+                <PiGraduationCap className='flex mt-1 me-2' />
+                Education
+            </div>
         </div>
-        <div className="Education flex justify-center mb-4">
-            <PiGraduationCap className='flex mt-1 me-2' />
-            Education
-        </div>
+
         {/* Content */}
         <div className="content flex min-h-48 justify-center">
             {/* Left Content */}
-            <div className="leftcontent my-auto w-full text-right">
+            <div data-aos='fade-right' className="leftcontent my-auto w-full text-right">
                 <div className='align-middle'>
                     <div className="HSC">
                         <div className="degree inline font-semibold stm:text-sm">
@@ -33,12 +36,12 @@ function QualificationPAge() {
             </div>
 
             {/* Middle Line */}
-            <div className="Middleline border dark:border-white border-black"></div>
+            <div data-aos='zoom-in' className="Middleline border dark:border-white border-black"></div>
 
             {/* Right Content BE and SSLC Comes Below*/}
             <div className="rightcontent w-full ">
                
-                <div className="BE">
+                <div  data-aos='fade-left' className="BE">
                     <div className="arrow inline">
                         <BsFillCaretRightFill className='inline' />
                     </div>
@@ -52,7 +55,7 @@ function QualificationPAge() {
                     </div>
                 </div>
                 
-                <div className="SSLC pt-52 stm:pt-44">
+                <div data-aos='fade-left' className="SSLC pt-52 stm:pt-44">
                     <div className="arrow inline">
                         <BsFillCaretRightFill className='inline' />
                     </div>

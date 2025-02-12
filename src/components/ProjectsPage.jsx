@@ -55,7 +55,7 @@ function ProjectsPage() {
   };
 
   return (
-    <section id="Project" className="w-full dark:text-white my-6 px-4">
+    <section data-aos='zoom-out' id="Project" className="w-full dark:text-white my-6 px-4">
       <h1 className="text-2xl font-semibold text-center m-2 mb-8 md:mb-16">Projects</h1>
 
       {/* Carousel */}

@@ -55,16 +55,19 @@ function ContactPage() {
 
   return (
     <section id="Contact" className="text-black dark:text-white justify-items-center w-full md:min:h-full p-4">
-      <div className="Heading text-2xl sm:text-xxl font-semibold text-center m-2">
-        Contact Us
+      <div data-aos='fade-up' className="head">
+        <div className="Heading text-2xl sm:text-xxl font-semibold text-center m-2">
+          Contact Us
+        </div>
+        <div className="SubHeading text-center text-gray-600 dark:text-gray-300 mb-4">
+          Let's Get in Touch
+        </div>
       </div>
-      <div className="SubHeading text-center text-gray-600 dark:text-gray-300 mb-4">
-        Let's Get in Touch
-      </div>
+
       <div className="Content gap-6 md:px-6 m-3 grid md:grid-cols-2 sm:grid-cols-1 w-full">
         
         {/* Left Content (Form) */}
-        <div className="LeftContent md:order-2 border border-gray-500 rounded-md p-6 shadow-md">
+        <div data-aos='fade-right' className="LeftContent md:order-2 border border-gray-500 rounded-md p-6 shadow-md">
           <form className="w-full mx-auto" onSubmit={handleSubmit}>
             <div className="relative z-0 w-full mb-5 group">
               <input
@@ -158,7 +161,7 @@ function ContactPage() {
         </div>
 
         {/* Right Content (Contact Info & Social Links) */}
-        <div className="RightContent md:order-1 border border-gray-500 rounded-md p-6 shadow-md">
+        <div data-aos='fade-left' className="RightContent md:order-1 border border-gray-500 rounded-md p-6 shadow-md">
             <div className="topContent space-y-4">
               <div className="flex items-center text-gray-700 dark:text-gray-300">
                 <BsTelephone className="mr-3 text-blue-600 dark:text-blue-400" />

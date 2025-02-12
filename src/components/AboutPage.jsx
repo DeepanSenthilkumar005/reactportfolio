@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function AboutPage() {
   return (
-    <section id='About' className='AboutPage dark:text-white justify-items-center w-full md:min:h-full p-4'>
+    <section id='About' data-aos='fade-up' className='AboutPage dark:text-white justify-items-center w-full md:min:h-full p-4'>
       <div className="Heading text-2xl stm:text-xxl font-semibold text-center m-2">
         My Introduction
       </div>

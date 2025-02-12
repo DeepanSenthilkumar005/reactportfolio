@@ -4,7 +4,7 @@ function WelcomePage({ isVisible, setIsVisible }) {
   if (!isVisible) return null; // Hide if isVisible is false
 
   return (
-    <section className="PopUpPage h-svh w-full m-auto p-4 flex">
+    <section data-aos='zoom-in-up' className="PopUpPage h-svh w-full m-auto p-4 flex">
       <div className="max-w-sm stm:shadow-md m-auto p-6 bg-white border border-gray-200 dark:shadow-gray-600 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
           I am Deepan

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // ✅ Add useEffect here
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
@@ -9,9 +9,15 @@ import ProjectsPage from "./components/ProjectsPage";
 import WelcomePage from "./components/WelcomePage";
 import Timeline from "./components/TimeLine";
 import ContactPage from "./components/ContactPage";
+import AOS from "aos"; // ✅ Import AOS
+import "aos/dist/aos.css";
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: false }); // ✅ AOS initialization
+  }, []);
 
   return (
     <div className="font-poppins dark:bg-black">
