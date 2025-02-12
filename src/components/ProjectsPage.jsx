@@ -61,7 +61,7 @@ function ProjectsPage() {
       {/* Carousel */}
       <div className="relative w-full max-w-3xl mx-auto">
         {/* Wrapper for Images */}
-        <div className="relative h-56 md:h-96 shadow-sm shadow-black overflow-hidden rounded-lg">
+        <div className="relative h-56 md:h-96 shadow-sm shadow-black  dark:shadow-md dark:shadow-white overflow-hidden rounded-lg">
           {projectsData.map((project, index) => (
             <div
               key={project.id}
@@ -82,7 +82,7 @@ function ProjectsPage() {
                   <a href={project.Link} target="__blank" className="hover:scale-105 duration-500 ease-in-out transition-all" >
                     <p className="text-lg font-semibold text-center">
                       <abbr title="Link">
-                        {project.title}<LiaExternalLinkAltSolid className="inline mb-0.5 ms-0.5" />
+                        {project.title}<LiaExternalLinkAltSolid className="inline mb-0.5 ms-0.5 md:animate-bounce" />
                       </abbr>
                     </p>
                   </a>
