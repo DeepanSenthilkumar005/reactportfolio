@@ -26,7 +26,9 @@ function ContactPage() {
     console.log("Submitting form:", formData); // Debugging
 
     try {
-      const response = await fetch("http://localhost:8000/feedback", {
+      // const response = await fetch("http://localhost:8000/feedback", {
+        const response = await fetch("https://deepanreactportfolio.netlify.app/feedback", {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json",
