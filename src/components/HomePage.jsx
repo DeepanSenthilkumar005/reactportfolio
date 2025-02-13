@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProfilePhoto from "../assets/Profile.jpg"
+import ProfilePhoto from "../assets/Profile1.jpg"
 // import ProfilePhoto from "../assets/person.avif"
 import { SlSocialLinkedin } from "react-icons/sl";
 import { SlSocialGithub } from "react-icons/sl";
@@ -45,7 +45,7 @@ function HomePage() {
 
               </ul>
             </div>
-            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4 stm:w-2/3 stm:mx-auto object-cover rounded-md transition-all duration-300 ' />
+            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/3 w-3/4 stm:w-2/3 stm:mx-auto object-cover rounded-md transition-all duration-300 ' />
           </div>
           {/* Right Content */}
           <div data-aos='fade-left' className="RightContent stm:mt-5 stm:mx-auto my-auto text-gray-900 dark:text-white max-w-4xl mx-auto">

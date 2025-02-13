@@ -3,7 +3,7 @@ import { PiGraduationCap } from "react-icons/pi";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import { BsFillCaretLeftFill } from "react-icons/bs";
 
-function QualificationPAge() {
+function QualificationPage() {
   return (
     <section id='Qualification' className="QualificationPage dark:text-white my-6 w-full p-4">
         <div data-aos='fade-up' className="head">
@@ -74,4 +74,4 @@ function QualificationPAge() {
   )
 }
 
-export default QualificationPAge
+export default QualificationPage
