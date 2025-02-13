@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import ProfilePhoto from "../assets/person.avif"
+import ProfilePhoto from "../assets/Profile.jpg"
+// import ProfilePhoto from "../assets/person.avif"
 import { SlSocialLinkedin } from "react-icons/sl";
 import { SlSocialGithub } from "react-icons/sl";
 import { TbWorld } from "react-icons/tb";
 import Typewriter from './Typewriter ';
 import { TfiHandPointDown } from "react-icons/tfi";
-import ScrollGif from '../assets/scroll.gif'
-import WelcomePage from './WelcomePage';
+// import ScrollGif from '../assets/scroll.gif'
+// import WelcomePage from './WelcomePage';
 
 function HomePage() {
   const Links=[
@@ -44,7 +45,7 @@ function HomePage() {
 
               </ul>
             </div>
-            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4 md:grayscale md:hover:grayscale-0  transition-all duration-300 ' />
+            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/2 w-3/4 rounded-md md:grayscale md:hover:grayscale-0  transition-all duration-300 ' />
           </div>
           {/* Right Content */}
           <div data-aos='fade-left' className="RightContent stm:mt-5 stm:mx-auto my-auto text-gray-900 dark:text-white max-w-4xl mx-auto">
