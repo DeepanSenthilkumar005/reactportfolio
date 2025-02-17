@@ -193,7 +193,7 @@ function ContactPage() {
                   rel="noopener noreferrer"
                   className="hover:underline text-lg font-medium"
                 >
-                  GitHub
+                  DeepanSenthilkumar005
                 </a>
               </div>
               <div className="flex items-center text-gray-700 dark:text-gray-300">
@@ -204,7 +204,7 @@ function ContactPage() {
                   rel="noopener noreferrer"
                   className="hover:underline text-lg font-medium"
                 >
-                  WhatsApp
+                  919442479225
                 </a>
               </div>
               <div className="flex items-center text-gray-700 dark:text-gray-300">
@@ -215,7 +215,7 @@ function ContactPage() {
                   rel="noopener noreferrer"
                   className="hover:underline text-lg font-medium"
                 >
-                  LinkedIn
+                  deepan-senthilkumar
                 </a>
               </div>
             </div>
