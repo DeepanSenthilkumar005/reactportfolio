@@ -27,7 +27,7 @@ function ContactPage() {
 
     try {
       // const response = await fetch("http://localhost:8000/feedback", {
-        const response = await fetch("https://deepanreactportfolio.netlify.app/feedback", {
+        const response = await fetch("https://portfolio-mern-ko1u.onrender.com/feedback", {
 
         method: "POST",
         headers: {
