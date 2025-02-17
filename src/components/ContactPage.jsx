@@ -157,7 +157,7 @@ function ContactPage() {
               </button>
             </div>
           </form>
-          {statusMessage && <p className="text-center text-green-500 mt-3">{statusMessage}</p>}
+          {statusMessage && <p className="text-center text-blue-600 dark:text-green-500 mt-3">{statusMessage}</p>}
         </div>
 
         {/* Right Content (Contact Info & Social Links) */}
