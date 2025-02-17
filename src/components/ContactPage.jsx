@@ -7,7 +7,7 @@ function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    phone: " ",
     msg: "",
   });
 
