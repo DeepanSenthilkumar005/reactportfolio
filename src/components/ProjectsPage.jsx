@@ -44,7 +44,7 @@ function ProjectsPage() {
       "id": 6,
       "image": TodoImg,
       "title": "Todo List",
-      "description": "A full-stack To-Do List application with MongoDB for efficient data storage. Users can add, edit, delete, and mark tasks as completed. Features include user authentication, real-time updates, and a responsive UI for seamless task management.",
+      "description": "A full-stack To-Do List application with MongoDB for efficient data storage. Users can add and delete tasks. Features include user authentication*, real-time updates, and a responsive UI for seamless task management.",
       "Link":"https://github.com/DeepanSenthilkumar005/todo-mern-app"
     }
   ];
