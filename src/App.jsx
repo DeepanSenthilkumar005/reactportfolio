@@ -10,7 +10,7 @@ import WelcomePage from "./components/WelcomePage";
 import Timeline from "./components/TimeLine";
 import ContactPage from "./components/ContactPage";
 import AOS from "aos"; // ✅ Import AOS
-import "aos/dist/aos.css";
+import "aos/dist/aos.css"; //Use to Import the Css from the AOS
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);

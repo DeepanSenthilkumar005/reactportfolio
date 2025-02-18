@@ -32,7 +32,7 @@ function HomePage() {
         {/* <WelcomePage /> */}
         <div className="grid stm:grid-cols-1 md:gap-2 md:grid-cols-2">
           {/* Left Content */}
-          <div data-aos='fade-right' className="LeftContent my-auto flex justify-between">
+          <div data-aos='flip-right' className="LeftContent my-auto flex justify-between">
             <div className="links my-auto ms-12 items-center">
               <ul className='space-y-10'>
                 {
@@ -45,11 +45,13 @@ function HomePage() {
 
               </ul>
             </div>
-            <img src={ProfilePhoto} alt="Profile Photo" className='h-1/3 w-3/4 stm:w-2/3 stm:mx-auto object-cover rounded-md transition-all duration-300 ' />
+            <img src={ProfilePhoto} data-aos="flip-right" alt="Profile Photo" className='h-1/3 w-3/4 stm:w-2/3 stm:mx-auto object-cover rounded-md transition-all duration-300 ' />
           </div>
           {/* Right Content */}
           <div data-aos='fade-left' className="RightContent stm:mt-5 stm:mx-auto my-auto text-gray-900 dark:text-white max-w-4xl mx-auto">
-  <div className="Content bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700">
+  <div className="Content bg-white
+   dark:bg-gray-80 dark:bg-transparent
+   p-8 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700">
     <b className="text-3xl stm:text-2xl font-bold block text-gray-900 dark:text-white">
       Hi there!
     </b>
