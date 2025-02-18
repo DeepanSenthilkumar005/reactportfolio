@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
+import TodoImg from "../assets/TodoImg.png"
 
 function ProjectsPage() {
   // JSON data for projects
@@ -38,6 +39,13 @@ function ProjectsPage() {
       "title": "Chat App",
       "description": "A real-time chat application enabling users to communicate seamlessly. Features include instant messaging, user authentication, and a responsive UI for a smooth chatting experience.",
       "Link":"https://github.com/DeepanSenthilkumar005/chatapp"
+    },
+    {
+      "id": 6,
+      "image": TodoImg,
+      "title": "Todo List",
+      "description": "A full-stack To-Do List application with MongoDB for efficient data storage. Users can add, edit, delete, and mark tasks as completed. Features include user authentication, real-time updates, and a responsive UI for seamless task management.",
+      "Link":"https://github.com/DeepanSenthilkumar005/todo-mern-app"
     }
   ];
   
