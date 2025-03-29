@@ -11,6 +11,7 @@ import Timeline from "./components/TimeLine";
 import ContactPage from "./components/ContactPage";
 import AOS from "aos"; // ✅ Import AOS
 import "aos/dist/aos.css"; //Use to Import the Css from the AOS
+import SplashCursor from "./SplashCursor";
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
@@ -22,10 +23,12 @@ function App() {
   return (
     <div className="font-poppins dark:bg-black">
       {/* Show WelcomePage only if isVisible is true */}
+      <SplashCursor />
+
       <WelcomePage isVisible={isVisible} setIsVisible={setIsVisible} />
 
       {/* Show other components only after clicking Continue */}
-      {!isVisible && (
+      {(!isVisible || !!sessionStorage.getItem("show")) && (
         <>
           <NavBar />
           <HomePage />
