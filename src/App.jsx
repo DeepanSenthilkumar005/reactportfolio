@@ -23,7 +23,9 @@ function App() {
   return (
     <div className="font-poppins dark:bg-black">
       {/* Show WelcomePage only if isVisible is true */}
-      <SplashCursor />
+      
+      {/* <SplashCursor className="block sm:hidden" /> */}
+
 
       <WelcomePage isVisible={isVisible} setIsVisible={setIsVisible} />
 
