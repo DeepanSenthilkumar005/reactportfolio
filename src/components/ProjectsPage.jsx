@@ -52,7 +52,7 @@ function ProjectsPage() {
       "id": 7,
       "image": Bus360Img,
       "title": "Bus Scheduling App",
-      "description": "A full-stack Bus Scheduling System built with the MERN stack for efficient transport management. Users can view routes on a live map, and manage schedules. Features include driver allocation, real-time route display, driver notifications, and a responsive UI for a smooth booking experience.",
+      "description": "A full-stack Bus Scheduling System using the MERN stack with live map routes, driver allocation, real-time updates, and a responsive UI for seamless transport booking.",
       "Link":"https://github.com/DeepanSenthilkumar005/MiniProject"
     }
   ];
