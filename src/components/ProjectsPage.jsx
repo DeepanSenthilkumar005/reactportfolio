@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 import TodoImg from "../assets/TodoImg.png"
+import Bus360Img from "../assets/bus360.jpg"
 
 function ProjectsPage() {
   // JSON data for projects
@@ -46,6 +47,13 @@ function ProjectsPage() {
       "title": "Todo List",
       "description": "A full-stack To-Do List application with MongoDB for efficient data storage. Users can add and delete tasks. Features include user authentication*, real-time updates, and a responsive UI for seamless task management.",
       "Link":"https://github.com/DeepanSenthilkumar005/todo-mern-app"
+    },
+    {
+      "id": 7,
+      "image": Bus360Img,
+      "title": "Bus Scheduling App",
+      "description": "A full-stack Bus Scheduling System built with the MERN stack for efficient transport management. Users can view routes on a live map, and manage schedules. Features include driver allocation, real-time route display, driver notifications, and a responsive UI for a smooth booking experience.",
+      "Link":"https://github.com/DeepanSenthilkumar005/MiniProject"
     }
   ];
   
