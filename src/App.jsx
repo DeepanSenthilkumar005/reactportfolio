@@ -14,7 +14,7 @@ import "aos/dist/aos.css"; //Use to Import the Css from the AOS
 import SplashCursor from "./SplashCursor";
 
 function App() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(!true);
 
   useEffect(() => {
     AOS.init({ duration: 1500, once: true }); // ✅ AOS initialization
@@ -27,7 +27,7 @@ function App() {
       {/* <SplashCursor className="block sm:hidden" /> */}
 
 
-      <WelcomePage isVisible={isVisible} setIsVisible={setIsVisible} />
+      {/* <WelcomePage isVisible={isVisible} setIsVisible={setIsVisible} /> */}
 
       {/* Show other components only after clicking Continue */}
       {(!isVisible || !!sessionStorage.getItem("show")) && (
