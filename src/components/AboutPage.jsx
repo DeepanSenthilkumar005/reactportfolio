@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from '../assets/Resume.pdf'
+import Resume from '../assets/DeepanResume.pdf'
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function AboutPage() {
