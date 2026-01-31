@@ -172,7 +172,7 @@ function ContactPage() {
               <div className="flex items-center text-gray-700 dark:text-gray-300">
                 <GrMailOption className="mr-3 text-red-600 dark:text-red-400" />
                 <a href="mailto:workwithdeepan@gmail.com" className="hover:underline text-lg font-medium">
-                  workwithdeeapn@gmail.com
+                  workwithdeepan@gmail.com
                 </a>
               </div>
               <div className="flex items-center text-gray-700 dark:text-gray-300">
