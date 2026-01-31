@@ -178,7 +178,8 @@ function ContactPage() {
               <div className="flex items-center text-gray-700 dark:text-gray-300">
                 <SlLocationPin className="mr-3 text-green-600 dark:text-green-400" />
                 <span className="text-lg font-medium">
-                  Namakkal, Tamil Nadu, India
+                  {/* Namakkal, Tamil Nadu, India */}
+                  Bengaluru, India
                 </span>
               </div>
             </div>
