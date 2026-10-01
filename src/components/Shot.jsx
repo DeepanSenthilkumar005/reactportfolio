@@ -4,7 +4,7 @@ import { useState } from 'react';
  * An image that degrades into a labelled placeholder when the file isn't there
  * yet, so a missing screenshot reads as "add one here" instead of a broken icon.
  */
-function Shot({ src, alt, label, className = '', ratio = 'aspect-[9/19]' }) {
+function Shot({ src, alt, label, className = '', ratio = 'aspect-[9/20]' }) {
   const [failed, setFailed] = useState(!src);
 
   if (failed) {

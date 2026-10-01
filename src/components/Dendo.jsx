@@ -85,10 +85,8 @@ function Dendo() {
               <figure
                 key={shot.src}
                 className={[
-                  'w-1/3 max-w-[11rem] rounded-[1.6rem] border border-rule bg-white p-1.5 shadow-lift transition-transform duration-300 hover:-translate-y-1.5',
-                  i === 0 ? '-rotate-3 md:mb-8' : '',
-                  i === 1 ? 'z-10' : '',
-                  i === 2 ? 'rotate-3 md:mb-8' : '',
+                  'w-1/2 max-w-[12.5rem] rounded-[1.6rem] border border-rule bg-white p-1.5 shadow-lift transition-transform duration-300 hover:-translate-y-1.5',
+                  i === 0 ? '-rotate-2 md:mb-8' : 'rotate-2',
                 ].join(' ')}
               >
                 <Shot

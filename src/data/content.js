@@ -35,12 +35,10 @@ export const feature = {
     tagline: "delivered daily",
     platforms: "Android and iOS",
   },
-  // Stand-in mockups for layout. Replace with real screenshots from the store
-  // listings before this goes live — see frontend/README.md.
+  // Real screenshots from the shipped app.
   shots: [
-    { src: "/dendo-1.svg", label: "Home" },
-    { src: "/dendo-2.svg", label: "Order tracking" },
-    { src: "/dendo-3.svg", label: "Checkout" },
+    { src: "/dendo-1.jpg", label: "Home" },
+    { src: "/dendo-3.jpg", label: "Cart and payment" },
   ],
   links: [
     { label: "Get it on Google Play", href: "https://play.google.com/store/apps/details?id=com.dendo.update.user" },
