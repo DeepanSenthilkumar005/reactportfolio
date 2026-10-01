@@ -5,7 +5,7 @@ import Shot from './Shot';
 function Hero() {
   return (
     <section id="top" className="mx-auto w-full max-w-page px-6 pb-20 pt-16 sm:pt-24 lg:px-10">
-      <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_16rem] md:gap-16">
+      <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_12rem] md:gap-14">
         <div className="order-2 md:order-1">
           <p className="mb-5 inline-flex items-center gap-2 border border-accent/30 bg-accent/10 px-3 py-1.5 text-sm text-accent">
             <span className="relative flex h-1.5 w-1.5">
@@ -46,7 +46,7 @@ function Hero() {
 
         {/* Pinned-photo treatment: a small rotation reads as placed by hand. */}
         <div className="order-1 md:order-2">
-          <div className="w-44 rotate-1.5 bg-white p-2.5 shadow-paper sm:w-52 md:w-full">
+          <div className="w-44 rotate-1.5 bg-white p-2 shadow-paper sm:w-48 md:w-full">
             {/* Duotone: the photo has a hard studio-blue ground that fights the
                 cream palette, so it's desaturated and re-tinted warm. */}
             <div className="relative overflow-hidden">
