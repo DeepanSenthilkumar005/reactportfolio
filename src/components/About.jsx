@@ -10,10 +10,11 @@ function About() {
           </h2>
 
           <div className="mt-7 max-w-prose space-y-5 text-[17px] leading-[1.7] text-soft">
-            <p>{now.origin}</p>
-            <p>{now.study}</p>
-            <p>{now.reading}</p>
-            <p>{now.between}</p>
+            {[now.origin, now.study, now.reading, now.between]
+              .filter(Boolean)
+              .map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
           </div>
         </div>
 

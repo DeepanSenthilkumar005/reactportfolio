@@ -1,6 +1,6 @@
 // Everything the site says lives here. Edit words here, not in components.
-// TODO markers need Deepan's own words — leave them visible rather than
-// filling them with something generic.
+// Fields left as null are optional — the components skip them rather than
+// render an empty paragraph.
 
 export const profile = {
   name: "Deepan S",
@@ -52,8 +52,8 @@ export const work = [
     year: "2025",
     blurb:
       "During the festival, 27 police stations coordinate by radio and nobody has the full picture. I built a portal that put every unit on one shared map, with role-based access so a station sees its own ground and control sees all of it.",
-    // TODO one sentence: what was actually hard here, and what you did about it.
-    hard: "TODO — the hard part.",
+    // One sentence on what was actually hard here would lift this a lot.
+    hard: null,
     stack: ["React", "Leaflet.js", "Bootstrap"],
     image: null,
     link: null,
@@ -63,7 +63,7 @@ export const work = [
     year: "2025",
     blurb:
       "A system that automates bus schedules and crew assignments across depots, with role-based dashboards, email alerts and routes drawn live on a map. My final-year project, and the first full-stack thing I built where the data model mattered more than the UI.",
-    hard: "TODO — the hard part.",
+    hard: null,
     stack: ["React", "Node.js", "MongoDB", "Leaflet.js"],
     image: "bus360",
     link: "https://github.com/DeepanSenthilkumar005/MiniProject",
@@ -88,8 +88,9 @@ export const jobs = [
 ];
 
 export const now = {
-  // TODO replace with why you started writing software. Your words, not polished.
-  origin: "TODO — why you started writing software.",
+  // Why you started writing software, in your own words — the one thing here
+  // that can't be read off a CV. Fill it in and it renders first.
+  origin: null,
   study:
     "I finished my B.E. in Computer Science at KSR College of Engineering, Tiruchengode, in 2026 with a CGPA of 7.54. Along the way I scored 100% on the hands-on programming section of the TCS NQT and came second at Code Relay at Karpagam.",
   reading:
