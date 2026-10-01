@@ -1,48 +1,35 @@
-import React, { useState, useEffect } from "react"; // ✅ Add useEffect here
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import NavBar from "./components/NavBar";
-import AboutPage from "./components/AboutPage";
-import QualificationPage from "./components/QualificationPage";
-import SkillsPage from "./components/SkillsPage";
-import ProjectsPage from "./components/ProjectsPage";
-import WelcomePage from "./components/WelcomePage";
-import Timeline from "./components/TimeLine";
-import ContactPage from "./components/ContactPage";
-import AOS from "aos"; // ✅ Import AOS
-import "aos/dist/aos.css"; //Use to Import the Css from the AOS
-import SplashCursor from "./SplashCursor";
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import Dendo from './components/Dendo';
+import Work from './components/Work';
+import Jobs from './components/Jobs';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const [isVisible, setIsVisible] = useState(!true);
-
-  useEffect(() => {
-    AOS.init({ duration: 1500, once: true }); // ✅ AOS initialization
-  }, []);
-
   return (
-    <div className="font-poppins dark:bg-black">
-      {/* Show WelcomePage only if isVisible is true */}
-      
-      {/* <SplashCursor className="block sm:hidden" /> */}
+    <>
+      <a
+        href="#dendo"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-paper"
+      >
+        Skip to content
+      </a>
 
+      <Nav />
 
-      {/* <WelcomePage isVisible={isVisible} setIsVisible={setIsVisible} /> */}
+      <main>
+        <Hero />
+        <Dendo />
+        <Work />
+        <Jobs />
+        <About />
+        <Contact />
+      </main>
 
-      {/* Show other components only after clicking Continue */}
-      {(!isVisible || !!sessionStorage.getItem("show")) && (
-        <>
-          <NavBar />
-          <HomePage />
-          <AboutPage />
-          <QualificationPage />
-          <SkillsPage />
-          <ProjectsPage />
-          {/* <Timeline /> */}
-          <ContactPage />
-        </>
-      )}
-    </div>
+      <Footer />
+    </>
   );
 }
 

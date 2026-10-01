@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" width="360" height="760" role="img" aria-label="Dendo home screen mockup">
+  <rect width="360" height="760" fill="#f7f8fa"/>
+  <rect width="360" height="188" fill="#14408b"/>
+  <text x="24" y="58" font-family="Verdana,sans-serif" font-size="13" fill="#9fb6e2">Deliver to</text>
+  <text x="24" y="80" font-family="Verdana,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Bengaluru</text>
+  <circle cx="330" cy="68" r="15" fill="#2b569f"/>
+  <rect x="24" y="106" width="312" height="44" rx="22" fill="#ffffff"/>
+  <circle cx="50" cy="128" r="7" fill="none" stroke="#9aa3b2" stroke-width="2.5"/>
+  <line x1="55" y1="133" x2="61" y2="139" stroke="#9aa3b2" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="74" y="133" font-family="Verdana,sans-serif" font-size="13" fill="#9aa3b2">Search for food</text>
+  <g font-family="Verdana,sans-serif" font-size="11" fill="#14408b">
+    <rect x="24" y="210" width="74" height="30" rx="15" fill="#e3eaf7"/><text x="43" y="230">Biryani</text>
+    <rect x="106" y="210" width="74" height="30" rx="15" fill="#e3eaf7"/><text x="129" y="230">Dosa</text>
+    <rect x="188" y="210" width="74" height="30" rx="15" fill="#e3eaf7"/><text x="207" y="230">Pizza</text>
+    <rect x="270" y="210" width="66" height="30" rx="15" fill="#e3eaf7"/><text x="288" y="230">Rolls</text>
+  </g>
+  <g>
+    <rect x="24" y="268" width="312" height="132" rx="14" fill="#ffffff"/>
+    <rect x="24" y="268" width="312" height="76" rx="14" fill="#dfe6f3"/>
+    <circle cx="180" cy="306" r="22" fill="#c7d4ea"/>
+    <rect x="38" y="356" width="150" height="11" rx="5" fill="#2a3448"/>
+    <rect x="38" y="376" width="96" height="9" rx="4" fill="#aab3c2"/>
+    <rect x="286" y="356" width="36" height="18" rx="9" fill="#14408b"/>
+  </g>
+  <g>
+    <rect x="24" y="416" width="312" height="132" rx="14" fill="#ffffff"/>
+    <rect x="24" y="416" width="312" height="76" rx="14" fill="#dfe6f3"/>
+    <circle cx="180" cy="454" r="22" fill="#c7d4ea"/>
+    <rect x="38" y="504" width="128" height="11" rx="5" fill="#2a3448"/>
+    <rect x="38" y="524" width="108" height="9" rx="4" fill="#aab3c2"/>
+    <rect x="286" y="504" width="36" height="18" rx="9" fill="#14408b"/>
+  </g>
+  <g>
+    <rect x="24" y="564" width="312" height="110" rx="14" fill="#ffffff"/>
+    <rect x="24" y="564" width="312" height="62" rx="14" fill="#dfe6f3"/>
+    <rect x="38" y="638" width="140" height="11" rx="5" fill="#2a3448"/>
+  </g>
+  <rect y="700" width="360" height="60" fill="#ffffff"/>
+  <g fill="#c2c9d6"><circle cx="72" cy="730" r="9"/><circle cx="144" cy="730" r="9"/><circle cx="288" cy="730" r="9"/></g>
+  <circle cx="216" cy="730" r="9" fill="#14408b"/>
+</svg>

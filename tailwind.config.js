@@ -1,54 +1,34 @@
-module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      colors: { 
-         customGray: '#f8f8f8',
-         customBlack: '#000000',
-         customWhite: '#FFFFFF',
-         customGreen : '#00bf63',
-        },
-      screens: { 
-        'xsm': { 'min': '0px' },
-        'stm': { 'min': '10px', 'max': '768px' },
+      colors: {
+        paper: '#faf6f0',
+        card: '#f3ebe0',
+        rule: '#e6dace',
+        ink: '#1c1917',
+        soft: '#57534e',
+        muted: '#8a817a',
+        accent: '#c2571f',
+        accentSoft: '#e8845a',
       },
-      fontSize: { 
-        'cstext': '23px',
+      fontFamily: {
+        display: ['Fraunces', 'Georgia', 'serif'],
+        sans: ['Karla', 'system-ui', 'sans-serif'],
       },
-
-      
-
-      fontFamily: { 
-        roboto: ['Roboto', 'sans-serif'],
-        openSans: ['Open Sans', 'sans-serif'],
-        lato: ['Lato', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
-        merriweather: ['Merriweather', 'serif'],
-        inter: ['Inter', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
-      }
-      
+      maxWidth: {
+        page: '68rem',
+        prose: '36rem',
+      },
+      rotate: {
+        1.5: '1.5deg',
+      },
+      boxShadow: {
+        paper: '0 1px 2px rgba(28,25,23,0.04), 0 8px 24px -12px rgba(28,25,23,0.18)',
+        lift: '0 2px 4px rgba(28,25,23,0.05), 0 18px 40px -16px rgba(28,25,23,0.25)',
+      },
     },
   },
-  // plugins: [
-  //   function({ addUtilities }) 
-  //   { addUtilities(
-  //     { '.no-scrollbar': { '-ms-overflow-style': 'none',/* Internet Explorer 10+ */ 
-  //      'scrollbar-width': 'none', /* Firefox */ },
-  //       '.no-scrollbar::-webkit-scrollbar': { 'display': 'none', /* Safari and Chrome */ },
-  //      });
-  //      }
-  // ],
-  plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.webkit-overflow-hidden': {
-          '-webkit-overflow-scrolling': 'none',
-        },
-      });
-    },
-  ],
+  plugins: [],
 }

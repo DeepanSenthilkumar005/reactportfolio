@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  /* Fraunces is a variable face; soften it and let optical sizing do its job. */
+  .font-display {
+    font-variation-settings: 'SOFT' 40, 'WONK' 1;
+  }
+
+  :focus-visible {
+    @apply rounded-sm outline-none ring-2 ring-accent/60 ring-offset-2 ring-offset-paper;
+  }
+
+  ::selection {
+    @apply bg-accent/20;
+  }
+}
+
+@layer components {
+  /* Warm underline that grows on hover — used on every inline link. */
+  .link {
+    @apply relative text-ink no-underline transition-colors hover:text-accent;
+    background-image: linear-gradient(theme('colors.accent'), theme('colors.accent'));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    padding-bottom: 1px;
+    transition: background-size 0.25s ease, color 0.2s ease;
+  }
+
+  .link:hover {
+    background-size: 100% 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" width="360" height="760" role="img" aria-label="Dendo order tracking screen mockup">
+  <rect width="360" height="760" fill="#f7f8fa"/>
+  <rect width="360" height="430" fill="#e8edf5"/>
+  <g stroke="#d2dae8" stroke-width="2" fill="none">
+    <path d="M0 120 H360 M0 250 H360 M0 350 H360 M90 0 V430 M250 0 V430"/>
+  </g>
+  <path d="M80 380 C120 300 180 300 210 220 S280 150 300 96" stroke="#14408b" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="80" cy="380" r="9" fill="#ffffff" stroke="#14408b" stroke-width="5"/>
+  <circle cx="300" cy="96" r="13" fill="#14408b"/>
+  <rect x="24" y="44" width="56" height="34" rx="17" fill="#ffffff"/>
+  <path d="M56 54 L46 61 L56 68" stroke="#14408b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect y="410" width="360" height="350" rx="26" fill="#ffffff"/>
+  <rect x="152" y="428" width="56" height="5" rx="2.5" fill="#d6dbe4"/>
+  <text x="28" y="480" font-family="Verdana,sans-serif" font-size="17" font-weight="bold" fill="#1b2434">Arriving in 12 min</text>
+  <text x="28" y="504" font-family="Verdana,sans-serif" font-size="12" fill="#98a1b0">Order #4821 · 3 items</text>
+  <g>
+    <circle cx="36" cy="552" r="9" fill="#14408b"/><rect x="34.5" y="561" width="3" height="42" fill="#14408b"/>
+    <circle cx="36" cy="603" r="9" fill="#14408b"/><rect x="34.5" y="612" width="3" height="42" fill="#dde2ea"/>
+    <circle cx="36" cy="654" r="9" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+    <g font-family="Verdana,sans-serif" font-size="12.5" fill="#2a3448">
+      <text x="62" y="557">Order confirmed</text>
+      <text x="62" y="608">Out for delivery</text>
+      <text x="62" y="659" fill="#a9b1be">Delivered</text>
+    </g>
+  </g>
+  <rect x="24" y="694" width="312" height="44" rx="22" fill="#14408b"/>
+  <text x="124" y="722" font-family="Verdana,sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Call rider</text>
+</svg>

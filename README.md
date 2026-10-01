@@ -1,17 +1,26 @@
-# About Me  
+# frontend
 
-I am a Computer Science student currently pursuing a Bachelor of Engineering degree. With a strong passion for software development and technology, I have honed my skills in programming languages such as **C**, **Python**, **Java**, and **JavaScript**. My expertise extends to web technologies, including **HTML**, **CSS**, and **React.js**, and frameworks like **Tailwind CSS** and **Bootstrap**, which enable me to design efficient and visually appealing web applications.  
+Vite + React + Tailwind. See the root `README.md` for setup.
 
-### My Experience  
-During my academic journey, I have worked on several projects that have sharpened my **front-end development** and **problem-solving skills**. Some of my noteworthy accomplishments include:  
-- Building dynamic user interfaces using React.js.  
-- Implementing responsive designs with Tailwind CSS and Bootstrap.  
-- Exploring innovative solutions to real-world problems through collaborative and individual projects.  
+Copy lives in `src/data/content.js`.
 
-### What Drives Me  
-I am deeply passionate about learning and staying up-to-date with emerging technologies in the tech industry. I take pride in my ability to quickly adapt to new tools and frameworks, which allows me to bring innovative ideas to life.  
+```bash
+npm run dev      # dev server
+npm run build    # production build to dist/
+npm run lint
+```
 
-### My Vision  
-I aim to contribute to impactful projects that make a difference in the world. By leveraging my technical expertise and eagerness to learn, I aspire to create software solutions that are both practical and innovative.  
+## Images in `public/`
 
-Let’s connect and build something remarkable together!  
+| File | What it is | Status |
+| --- | --- | --- |
+| `photo.jpg` | Photo of Deepan, 4:5 | in place (formal ID shot, rendered duotone) |
+| `dendo-logo.png` | Dendo lockup; the icon is cropped out of it in code | in place |
+| `dendo-1/2/3.svg` | Home, tracking, checkout | **stand-in mockups — replace before going live** |
+| `favicon.png` | Tab icon | in place |
+| `og.png` | Social share card | **needs replacing — must be 1200x630** |
+
+The Dendo screens are illustrative placeholders, not the real app. The real
+screenshots are already public on the Play Store and App Store listings — save
+three of those as PNGs, then point `feature.shots` in `src/data/content.js` at
+them. Showing mockups as the product on a live portfolio would misrepresent it.
