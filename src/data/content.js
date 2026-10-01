@@ -38,6 +38,7 @@ export const feature = {
   // Real screenshots from the shipped app.
   shots: [
     { src: "/dendo-1.jpg", label: "Home" },
+    { src: "/dendo-2.jpg", label: "Live order tracking" },
     { src: "/dendo-3.jpg", label: "Cart and payment" },
   ],
   links: [
