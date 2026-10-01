@@ -1,8 +1,39 @@
 import { useState } from 'react';
 import { profile } from '../data/content';
 
+// Prefer the Apps Script endpoint when it's configured — it writes straight to
+// the Google Sheet and doesn't wait on Render to wake up. See
+// google-apps-script/SETUP.md. Falls back to the Express API when unset.
+const SHEET_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT;
 const API = import.meta.env.VITE_API_URL ?? 'https://portfolio-mern-ko1u.onrender.com';
 const EMPTY = { name: '', email: '', msg: '', website: '' };
+
+async function submit(form) {
+  if (SHEET_ENDPOINT) {
+    // text/plain keeps this a "simple" request, so the browser skips the
+    // preflight that Apps Script web apps can't answer.
+    const response = await fetch(SHEET_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ ...form, source: 'portfolio' }),
+    });
+
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || !data.ok) {
+      throw new Error(data.error || 'That did not go through.');
+    }
+    return;
+  }
+
+  const response = await fetch(`${API}/feedback`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(form),
+  });
+
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.error || 'That did not go through.');
+}
 
 function Contact() {
   const [form, setForm] = useState(EMPTY);
@@ -18,15 +49,7 @@ function Contact() {
     setError('');
 
     try {
-      const response = await fetch(`${API}/feedback`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-
-      const data = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(data.error || 'That did not go through.');
-
+      await submit(form);
       setForm(EMPTY);
       setState('sent');
     } catch (err) {
@@ -118,7 +141,9 @@ function Contact() {
           <p aria-live="polite" className="min-h-[1.5rem] text-[15px]">
             {state === 'sending' && (
               <span className="text-muted">
-                The server naps when nobody&apos;s around — this can take a minute.
+                {SHEET_ENDPOINT
+                  ? 'One moment…'
+                  : "The server naps when nobody's around — this can take a minute."}
               </span>
             )}
             {state === 'sent' && <span className="text-accent">Got it. I&apos;ll reply soon.</span>}
