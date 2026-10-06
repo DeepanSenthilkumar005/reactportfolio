@@ -10,7 +10,7 @@ export const profile = {
   github: "https://github.com/DeepanSenthilkumar005",
   linkedin: "https://www.linkedin.com/in/deepan-senthilkumar",
   whatsapp: "https://wa.me/919442479225",
-  photo: "/photo.jpg",
+  photo: "/profile.png",
 };
 
 export const hero = {
@@ -42,8 +42,14 @@ export const feature = {
     { src: "/dendo-3.jpg", label: "Cart and payment" },
   ],
   links: [
-    { label: "Get it on Google Play", href: "https://play.google.com/store/apps/details?id=com.dendo.update.user" },
-    { label: "Download on the App Store", href: "https://apps.apple.com/in/app/dendo-food-everything-app/id6754545236" },
+    {
+      label: "Get it on Google Play",
+      href: "https://play.google.com/store/apps/details?id=com.dendo.update.user",
+    },
+    {
+      label: "Download on the App Store",
+      href: "https://apps.apple.com/in/app/dendo-food-everything-app/id6754545236",
+    },
   ],
 };
 
@@ -103,14 +109,42 @@ export const now = {
 export const skills = [
   {
     label: "Day to day",
-    items: ["Java", "Spring Boot", "React", "JavaScript", "TypeScript", "Node.js", "Express", "MySQL", "REST APIs", "Git"],
+    items: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MySQL",
+      "REST APIs",
+      "Git",
+    ],
   },
   {
     label: "Comfortable",
-    items: ["Vue.js", "Tailwind", "MongoDB", "Laravel", "Flutter", "Elasticsearch", "ActiveMQ", "JUnit", "Jest", "Postman"],
+    items: [
+      "Vue.js",
+      "Tailwind",
+      "MongoDB",
+      "Laravel",
+      "Flutter",
+      "Elasticsearch",
+      "ActiveMQ",
+      "JUnit",
+      "Jest",
+      "Postman",
+    ],
   },
   {
     label: "Working knowledge",
-    items: ["AWS (EC2, RDS, S3)", "Docker", "Nginx", "GitHub Actions", "Firebase"],
+    items: [
+      "AWS (EC2, RDS, S3)",
+      "Docker",
+      "Nginx",
+      "GitHub Actions",
+      "Firebase",
+    ],
   },
 ];
