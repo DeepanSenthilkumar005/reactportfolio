@@ -1,38 +1,133 @@
+
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Deepan S — software engineer in Bengaluru</title>
+    <!-- SEO Title -->
+    <title>
+      Deepan S | Software Engineer & React Developer in Bengaluru
+    </title>
+
+    <!-- SEO Description -->
     <meta
       name="description"
-      content="Software engineer in Bengaluru. Six months building Dendo, a delivery platform live on Android and iOS — payments, caching, search. Looking for my next role."
+      content="Deepan S is a Software Engineer in Bengaluru with six months of experience building Dendo, a delivery platform for Android and iOS. Experienced in React, JavaScript, payments, caching and search."
     />
 
+    <meta name="author" content="Deepan S" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://deepanreactportfolio.netlify.app/"
+    />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="canonical" href="https://deepanreactportfolio.netlify.app/" />
+
+    <!-- Theme color -->
     <meta name="theme-color" content="#faf6f0" />
 
+    <!-- Open Graph metadata -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Deepan S — software engineer in Bengaluru" />
+    <meta
+      property="og:title"
+      content="Deepan S | Software Engineer & React Developer"
+    />
     <meta
       property="og:description"
-      content="Software engineer in Bengaluru. Most recently Dendo, a delivery platform live on Android and iOS."
+      content="Explore Deepan S's software engineering portfolio, projects and experience building Dendo, a delivery platform available on Android and iOS."
     />
-    <meta property="og:url" content="https://deepanreactportfolio.netlify.app/" />
-    <meta property="og:image" content="https://deepanreactportfolio.netlify.app/og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:url"
+      content="https://deepanreactportfolio.netlify.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://deepanreactportfolio.netlify.app/og.png"
+    />
+    <meta property="og:image:alt" content="Deepan S - Software Engineer" />
+    <meta property="og:site_name" content="Deepan S Portfolio" />
+    <meta property="og:locale" content="en_IN" />
 
+    <!-- Twitter / X Card metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Deepan S | Software Engineer & React Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Software Engineer in Bengaluru. Explore my projects, technical skills and experience building Dendo."
+    />
+    <meta
+      name="twitter:image"
+      content="https://deepanreactportfolio.netlify.app/og.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Deepan S - Software Engineer"
+    />
+
+    <!-- Person and Website structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://deepanreactportfolio.netlify.app/#person",
+            "name": "Deepan S",
+            "url": "https://deepanreactportfolio.netlify.app/",
+            "jobTitle": "Software Engineer",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "knowsAbout": [
+              "React",
+              "JavaScript",
+              "Software Engineering",
+              "Payment Integration",
+              "Caching",
+              "Search",
+              "Web Development"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://deepanreactportfolio.netlify.app/#website",
+            "url": "https://deepanreactportfolio.netlify.app/",
+            "name": "Deepan S Portfolio",
+            "description": "Software engineering portfolio of Deepan S.",
+            "author": {
+              "@id": "https://deepanreactportfolio.netlify.app/#person"
+            },
+            "inLanguage": "en-IN"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
