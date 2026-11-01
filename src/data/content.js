@@ -14,7 +14,7 @@ export const profile = {
 };
 
 export const hero = {
-  greeting: "Hey — I'm Deepan.",
+  greeting: "I'm Deepan S, a Software Engineer in Bengaluru.",
   lines: [
     "I'm a software engineer in Bengaluru. For the last six months I built payments, search and caching for Dendo, a delivery platform live on Android and iOS.",
     "Before that: Spring Boot and Vue at Restaurantware, React at Hertzworkz, and a B.E. in Computer Science finished earlier this year.",
