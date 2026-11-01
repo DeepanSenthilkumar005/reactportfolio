@@ -1,7 +1,8 @@
 import Bus360 from '../assets/bus360.jpg';
+import VcPolice from '../assets/vc_police.png';
 import { work } from '../data/content';
 
-const images = { bus360: Bus360 };
+const images = { bus360: Bus360, vc_police: VcPolice };
 
 function Work() {
   return (
@@ -23,7 +24,7 @@ function Work() {
             >
               {image && (
                 <div
-                  className={`overflow-hidden border border-rule bg-white p-1.5 shadow-paper ${
+                  className={`overflow-hidden border border-rule bg-white rounded-lg p-1.5 shadow-paper ${
                     i % 2 ? 'md:order-2' : ''
                   }`}
                 >
@@ -31,7 +32,7 @@ function Work() {
                     src={image}
                     alt={item.title}
                     loading="lazy"
-                    className="aspect-[16/10] w-full object-cover object-top"
+                    className="aspect-[16/10] w-full object-cover object-top rounded-sm"
                   />
                 </div>
               )}

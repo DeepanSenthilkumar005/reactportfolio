@@ -62,7 +62,7 @@ export const work = [
     // One sentence on what was actually hard here would lift this a lot.
     hard: null,
     stack: ["React", "Leaflet.js", "Bootstrap"],
-    image: null,
+    image: "vc_police",
     link: null,
   },
   {
